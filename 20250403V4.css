@@ -1,0 +1,46 @@
+/* Add a soft background hover & emoji */
+.paintball-pack {
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.paintball-pack:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.paintball-pack::before {
+  content: "🎯";
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.paintball-pack h3 {
+  margin-bottom: 0.3rem;
+  font-size: 1.15rem;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.paintball-pack p {
+  font-size: 0.95rem;
+  color: #3c3c3c;
+  margin-bottom: 1rem;
+}
+
+.paintball-pack input.YoplanningBookingEngine {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 8px !important;
+  padding: 0 30px !important;
+}

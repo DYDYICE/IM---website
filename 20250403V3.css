@@ -1,0 +1,26 @@
+.paintball-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.paintball-pack {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  background: #fff;
+}
+
+.paintball-pack h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+}
+
+.paintball-pack p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}

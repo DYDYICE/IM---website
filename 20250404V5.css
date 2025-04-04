@@ -1,0 +1,98 @@
+.paintball-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.paintball-pack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 550px;
+  margin: auto;
+}
+
+.paintball-pack:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.btn-info {
+  margin-right: 2rem;
+  padding: 0.7rem 1.2rem;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  cursor: url("https://cdn.jsdelivr.net/gh/DYDYICE/IM---website@main/click-cursor.png"), pointer;
+}
+
+.paintball-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.paintball-info h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #002b57;
+  margin: 0;
+}
+
+.paintball-info p {
+  font-size: 1.05rem;
+  margin: 0;
+  color: #333;
+}
+
+.btn-book {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background-color: #470ff4;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: background-color 0.2s ease;
+  width: fit-content;
+}
+
+.btn-book:hover {
+  background-color: #3616c6;
+}
+
+.booking-title {
+  text-align: center;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  display: none; /* volledig onzichtbaar maken */
+}
+
+@media (max-width: 768px) {
+  .paintball-pack {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn-info {
+    margin: 0 0 0.5rem 0;
+  }
+
+  .paintball-info {
+    align-items: center;
+  }
+}
